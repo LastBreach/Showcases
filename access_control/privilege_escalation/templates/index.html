@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LastBreach - Showcases</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</style>
+</head>
+
+<body style="repeat" background="bg0.jpg">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container" style="width: 50%">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">LastBreach Showcases</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Access Control</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <div class="container" style="width: 50%">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <li class="list-group-item list-group-item-danger">WARNING: Do not host these showcases publicly, they contain flaws and will put your server at risk!</li>
+                <h1>Privilege Escalation</h1>
+
+                <p>This website showcases a privilege escalation vulnerability. <br>This type of vulnerability allows you to access resources you shouldn't normally have access to.<br><br>See if you can get your hands on all ten documents.</p>
+                {% block content %}
+                  <h3>Download Approved Reports</h3>
+                  <p>Enter your DocID to download the approved report.</p>
+                  <form action="" method="post" name="document_download">
+                      <b>Please enter the DocumentID:</b> <a href="{{status}}">{{linkname}}</a><br>
+                          <input type="text" name="doc" value="DocumentID">
+                <input type="submit" class="btn btn-success" value="Download">
+                  </form>
+                {% endblock %}<br>
+                <b>Your recently approved reports</b><br>
+                123456<br>123452<br>123547<br>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
